@@ -1,0 +1,24 @@
+
+<!-- <table>
+  <tr *ngFor="let x of vconInfo">
+      <td>{{x.song}}</td>
+      <td><a href="{{x.url}}" target="_self">song</a></td>
+      <td>{{x.artists}}</td>
+      <td><img src="{{x.cover_image}}" width="100px"></td>
+  </tr>
+</table> -->
+
+<div class="container" *ngFor="let x of vconInfo" >
+  <div class="header">Audio Player</div>
+
+  <div class="img"><img src="{{x.cover_image}}" ></div>
+  <div>song</div>
+<table>
+  <tr>{{x.song}}</tr>
+  <tr>{{x.artists}}</tr>
+  <tr><a href="{{x.url}}" target="_blank">song</a></tr>
+</table>
+</div>
+
+
+
